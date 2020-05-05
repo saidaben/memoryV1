@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: rgba(194, 188, 188, 0.979);
+}
+
+/* header, regle du jeu */
+header{
+    height: 200px;
+    background-color: white;
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+.logo{
+    width: 200px;
+    height: 80px;
+  
+}
+/* section conteneur */
+.memory {
+    width: 640px;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:50px;
+    perspective: 1000px;
+    justify-content: center;
+    
+  
+  
+}
+/* cartes */
+.carte {
+    width: 25%;
+    height: 31%;
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    text-align: center;
+    line-height: 166px;
+    background-color: white;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.carte.tourne {
+    transform: rotateY(180deg);
+  }
+.pil,
+.face {
+    width: 100%;
+    position: absolute;
+    left: 1px;
+    backface-visibility: hidden;
+      
+}
+.pil{margin-top: 80px;}
+.face{ transform: rotateY(180deg);}
+
+/* mouvement click */
+.carte:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+
+  }
+
+
+
+/* linkedin */
+
+.in{
+      width: 250px;
+      height: 250px;
+     position: relative;
+     margin-left: 1268px;
+  }
+
+  .anim{cursor: pointer;
+    animation-duration: 5s;
+    animation-name:toto;
+    animation-iteration-count: infinite;
+    /* position: relative; */
+    margin-top: -613px;
+    /* left: 1157px; */
+  }
+
+    @keyframes toto {
+        from {
+          margin-left: 100%;
+          width: 15%; 
+        }
+      
+        to {
+          margin-left: -35%;
+          width: 40%;
+        }
+      }
+
+  #timer{color:green; 
+    background-color: black;
+    border: 2px solid black;
+    font-family: 'Anton', sans-serif;
+  font-size: 20px;}
+
+  #btn{display: block;
+width: 90px;
+height: 40px;
+border-radius: 40px ;
+box-shadow: 10px 5px 5px black;
+cursor: pointer;
+
+}
+a{text-decoration: none;}
+
+#button{display: flex;
+  flex-direction: row;
+  padding: 9px;
+  justify-content: space-evenly;
+    width: 1516px;
+    margin-bottom: 65px;
+}

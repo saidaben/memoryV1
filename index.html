@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="module" src="memory.js"></script>
+
+    <title>memory</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="assets/img/logo - 4.svg" alt="">
+        <h1>Mon premier jeux de memoire</h1>
+        <p>vient tester ta mémoire et tente d'attraper le grand méchant loup!</p>
+        <p> Prêt..feu...:<br><span id="timer" >C'est partie!</span></p>
+        
+    </header>
+    <section id="button"><button id="btn">j'ai fini</button>  <button id="btn"><a href="index.html">rejouer</a></button></section>
+    
+    <section class="memory">
+
+        <div class="carte" data-cartes="loup">
+
+            <img  class="face" src="assets/img/loup - 4.svg"  alt="">
+            <img  class="pil loup" src="assets/img/logo - 4.svg" alt=""></div>
+
+        <div class="carte" data-cartes="cochonun">
+            <img class="face" src="assets/img/PetitCochon1- 1.svg" alt="">
+            <img  class="pil" src="assets/img/logo - 4.svg"  alt=""></div>
+
+        <div class="carte" data-cartes="cochondeux">
+            <img class="face" src="assets/img/PetitCochon2- 2.svg" alt="">
+            <img class="pil" src="assets/img/logo - 4.svg" alt=""></div>
+
+        <div class="carte" data-cartes="cochontrois">
+            <img class="face" src="assets/img/PetitCochon3 - 3.svg" alt="">
+            <img class="pil" src="assets/img/logo - 4.svg" alt=""></div>
+
+        <div class="carte" data-cartes="cochondeux">
+            <img class="face" src="assets/img/PetitCochon2- 2.svg" alt="">
+            <img class="pil" src="assets/img/logo - 4.svg" alt=""></div>
+
+        <div class="carte" data-cartes="loup">
+            <img class="face" src="assets/img/loup - 4.svg" alt="">
+            <img id="lou" class="pil loup" src="assets/img/logo - 4.svg" alt=""></div>
+
+        <div class="carte" data-cartes="cochonun">
+            <img class="face" src="assets/img/PetitCochon1- 1.svg" alt="">
+            <img class="pil" src="assets/img/logo - 4.svg" alt=""></div>
+
+        <div class="carte" data-cartes="cochontrois">
+            <img class="face" src="assets/img/PetitCochon3 - 3.svg" alt="">
+            <img class="pil" src="assets/img/logo - 4.svg" alt=""></div>
+
+        <div class="carte" data-cartes="loup">
+            <img class="face" src="assets/img/loup - 4.svg" alt="">
+            <img id="stop" class="pil loup" src="assets/img/logo - 4.svg" alt=""></div>
+
+
+    </section>
+    <figure><img class="anim" src="assets/img/loup - 4.svg" alt=""></figure>
+    <figure><a href="http://www.linkedin.fr"><img class="in" src="assets/img/linkedeen- 1.svg" alt=""></a></figure>
+    <footer><span class="legal">
+            2020 - Saïda Benadour - Dev Web </span>
+    </footer>
+</body>
+
+</html>
